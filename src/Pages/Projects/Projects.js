@@ -1,16 +1,62 @@
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, CardGroup, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <Container className="my-5">
-            <h1 className="text-secondary">Some of my projects:</h1>
+        <div className=" bg-light">
+
+        <Container >
+            <h1 className="text-warning fw-bold fst-italic pt-5">Some of my projects:</h1>
             <br />
             <br />
             <br />
 
-            <CardGroup>
-            <Card>
+            <CardGroup className="mb-3">
+                <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="https://i.ibb.co/27X15ZP/Screenshot-2021-11-30-155545.png" />
+                <Card.Body>
+                    <Card.Title>Bi Bikes</Card.Title>
+                    <Card.Text>
+                     This is one of my best website where user can login using email and firebase to buy products.
+                    </Card.Text>
+                    <Button class="btn btn-warning"variant="primary">
+                        <Link  to="/biBikeDetails" className="header-text">Details</Link>
+                        </Button>
+                </Card.Body>
+            </Card>
+
+            </CardGroup>
+            <CardGroup className="my-3">
+                <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="https://i.ibb.co/4tY7vW5/Screenshot-2021-11-30-155913.png" />
+                <Card.Body>
+                    <Card.Title>Macbook Cart</Card.Title>
+                    <Card.Text>
+                     This is one of my best website where user can login using email and firebase to buy products.
+                    </Card.Text>
+                    <Button class="btn btn-secondary"variant="primary"><Link  to="/macbookCart" className="header-text">Details</Link></Button>
+                </Card.Body>
+
+            </Card>
+                </CardGroup >
+                <CardGroup  className="my-3">
+                <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="https://i.ibb.co/P1RzqRn/Screenshot-2021-11-30-153955.png" />
+                <Card.Body>
+                    <Card.Title>Weather App</Card.Title>
+                    <Card.Text>
+                     Always correct weather and Responsive design slick design . Weather condition with image.
+                    </Card.Text>
+                    <Button class="btn btn-danger"variant="primary"> <Link  to="/weatherApp" className="header-text">Details</Link> </Button>
+                </Card.Body>
+            </Card>
+
+            </CardGroup>
+
+            {/* <CardGroup>
+            <Card className="m-2">
                 <Card.Img variant="top" src="https://i.ibb.co/27X15ZP/Screenshot-2021-11-30-155545.png" />
                 <Card.Body>
                 <Card.Title>Bi-Bike</Card.Title>
@@ -79,8 +125,9 @@ const Projects = () => {
                 </Card.Text>
                 </Card.Body>
             </Card>
-            </CardGroup>
+            </CardGroup> */}
         </Container>
+        </div>
     );
 };
 

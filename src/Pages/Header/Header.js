@@ -9,15 +9,16 @@ const Header = () => {
         <div>
             <Navbar bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand  ><Link className="header-text" to="/home">Home</Link></Navbar.Brand>
-    <Nav className="me-auto">
+      <Navbar.Brand  ><Link className="header-text text-white fw-bold" to="/home">Portfolio</Link></Navbar.Brand>
+      <Nav className="me-auto">
+        <Nav.Link ><Link  to="/home" className="header-text">Home</Link></Nav.Link>
+        <Nav.Link ><Link  to="/blogs" className="header-text">Blogs</Link></Nav.Link>
 
-      <Nav.Link > <a href="https://form.jotform.com/213333813992357" alt="">Contact Me</a> </Nav.Link>
-      
-      <Nav.Link ><Link  to="/projects" className="header-text">Projects</Link></Nav.Link>
-      <Nav.Link ><Link  to="/" className="header-text">Projects</Link></Nav.Link>
-      
-    </Nav>
+        <Nav.Link><Link  to="/aboutMe" className="header-text">About Me</Link></Nav.Link>
+        
+        <Nav.Link ><Link  to="/contactMe" className="header-text">Contact Me</Link></Nav.Link>
+        
+      </Nav>
     </Container>
   </Navbar>
         </div>

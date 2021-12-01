@@ -1,23 +1,13 @@
-.footer-container {
-  height: 17.8%;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+.footer-bg{
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+  
 }
-.foorer-parent {
-  width: 100%;
-  height: 100%;
-  max-width: 1920px;
+.text-design{
+  color: white;
+  
 }
-.footer-parent img {
-  max-width: 100%;
-  height: 130px;
-}
-/*IPAD PRO RESPONSIVENESS*/
-@media only screen and (max-width: 1110px) {
-  .footer-parent {
-    display: flex;
-    align-items: flex-end;
-  }
+.portfolio-name{
+  font-family: "cursive";
 }

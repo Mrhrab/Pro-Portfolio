@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Typical from 'react-typical';
 import './Profile.css';
 
@@ -46,7 +47,7 @@ const Profile = () => {
             <button className="btn btn-warning rounded-pill hire-btn"
            
             >
-                <a href="https://form.jotform.com/213333813992357" alt="">Contact Me</a>
+                <Link  to="/contactMe" className="header-text">Contact Me</Link>
              </button>
             <a href="MehrabResume.pdf" download="MehrabResume.pdf">
               <button className="btn btn-danger rounded-pill resume-btn">Get Resume</button>

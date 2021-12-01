@@ -33,6 +33,8 @@
   background-image: url("../../assets/Home/bg.jpg");
   background-repeat: no-repeat;
   background-size: 10000px 1000px;
+  background-blend-mode: lighten
+  
 }
 .profile-parent {
   display: flex;
@@ -82,13 +84,7 @@
   width: 380px;
   margin: 0 0px 0 100px;
 }
-.profile-picture-background{
-    width: 92%;
-    height: 92%;
-    background-image: url('https://i.ibb.co/P9xxY2B/my-bg.png');
-    background-size: cover;
-    
-}
+
 
 @media only screen and (max-width: 910px) {
   .profile-picture {
