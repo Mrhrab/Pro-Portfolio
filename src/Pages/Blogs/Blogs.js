@@ -7,7 +7,7 @@ const Blogs = () => {
         <div>
             <Header></Header>
             <Container>
-            <h1>I m working on blogs. They are coming soon</h1>
+            <h1>I m working on blogs.Will come soon</h1>
         </Container>
         </div>
     );
